@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+<title id="title">Lead Chat｜24時間AI接客と質問ログ分析</title>
+<desc id="desc">ノートパソコンの画面にLead ChatのAI接客と質問ログ管理画面が表示され、手前にはサイズの揃ったキーボードが見える。</desc>
+<defs>
+<linearGradient id="metal" x2="0" y2="1"><stop stop-color="#eff3f3"/><stop offset=".5" stop-color="#b7c3c5"/><stop offset="1" stop-color="#829497"/></linearGradient>
+<linearGradient id="shell" x2="0" y2="1"><stop stop-color="#273b3e"/><stop offset="1" stop-color="#101c20"/></linearGradient>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e8f1ec"/><stop offset="1" stop-color="#fafbf9"/></linearGradient>
+<linearGradient id="green" x2="0" y2="1"><stop stop-color="#047e61"/><stop offset="1" stop-color="#075f4c"/></linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#183e35" flood-opacity=".22"/></filter>
+<filter id="cardShadow" x="-35%" y="-35%" width="170%" height="180%"><feDropShadow dx="0" dy="11" stdDeviation="12" flood-color="#163c34" flood-opacity=".19"/></filter>
+<pattern id="keys" width="42" height="24" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="36" height="17" rx="3" fill="#263337"/><path d="M5 4h29" stroke="#748789" stroke-opacity=".45"/></pattern>
+</defs>
+<ellipse cx="452" cy="566" rx="410" ry="27" fill="#1e5241" opacity=".09"/>
+<circle cx="705" cy="108" r="110" fill="#e8f5ed" opacity=".8"/>
+<circle cx="107" cy="431" r="75" fill="#e9f5ef" opacity=".75"/>
+<g filter="url(#shadow)">
+<rect x="92" y="40" width="712" height="433" rx="20" fill="url(#shell)"/>
+<rect x="103" y="53" width="690" height="407" rx="9" fill="#fff"/>
+<circle cx="448" cy="46" r="3" fill="#688185"/>
+<!-- website header -->
+<rect x="103" y="53" width="690" height="48" rx="7" fill="#fff"/>
+<circle cx="133" cy="78" r="12" fill="#169969"/><path d="M128 74h10v7h-6l-3 3v-3h-1z" fill="#fff"/>
+<text x="151" y="83" font-size="14" font-weight="800" fill="#163b34" font-family="Arial, sans-serif">Lead Chat</text>
+<text x="523" y="81" font-size="12" fill="#60746d" font-family="Arial, sans-serif">サービス　活用例　お問い合わせ</text>
+<rect x="103" y="101" width="690" height="359" fill="url(#bg)"/>
+<!-- website content -->
+<rect x="132" y="133" width="411" height="292" rx="16" fill="#fff" opacity=".94"/>
+<rect x="151" y="155" width="152" height="15" rx="7" fill="#dceae3"/>
+<text x="153" y="217" font-size="24" font-weight="850" fill="#142f30" font-family="sans-serif">Webサイトで</text>
+<text x="153" y="255" font-size="24" font-weight="850" fill="#142f30" font-family="sans-serif">24時間のAI接客</text>
+<rect x="153" y="278" width="250" height="9" rx="4" fill="#d5e3db"/>
+<rect x="153" y="296" width="197" height="9" rx="4" fill="#e6eee9"/>
+<rect x="153" y="325" width="184" height="38" rx="19" fill="#078563"/>
+<text x="173" y="349" font-size="13" font-weight="800" fill="#fff" font-family="sans-serif">サービスを詳しく見る</text>
+<g transform="translate(365 312)">
+<rect width="148" height="92" rx="12" fill="#edf7f1"/>
+<text x="15" y="25" font-size="13" font-weight="800" fill="#14684d" font-family="sans-serif">質問ログ</text>
+<path d="M16 66 L39 51 57 58 79 39 100 47 128 24" fill="none" stroke="#08a577" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M16 74H130" stroke="#c7dcd0" stroke-width="2"/>
+</g>
+<!-- keyboard mechanically connected to same screen; matching proportions -->
+<path d="M92 473H804L866 557Q870 564 851 567H43Q27 564 32 557Z" fill="url(#metal)" stroke="#77898a" stroke-width="2"/>
+<path d="M123 485H772L810 536H85Z" fill="#66777a"/>
+<path d="M129 490H766L795 531H99Z" fill="url(#keys)" opacity=".98"/>
+<rect x="356" y="532" width="183" height="21" rx="6" fill="#b3c1c1" stroke="#839797" stroke-width="1.5"/>
+<path d="M31 557H867Q864 567 845 570H53Q35 567 31 557Z" fill="#8a9c9e" opacity=".95"/>
+<path d="M393 563H503" stroke="#e0e8e6" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- floating AI chat UI -->
+<g filter="url(#cardShadow)">
+<rect x="505" y="169" width="311" height="273" rx="20" fill="#fff"/>
+<path d="M525 169H796Q816 169 816 190V215H505V190Q505 169 525 169Z" fill="url(#green)"/>
+<circle cx="529" cy="191" r="9" fill="#fff"/><path d="M524 188h10v6h-6l-3 2v-2h-1z" fill="#0b805c"/>
+<text x="546" y="197" font-family="Arial,sans-serif" font-size="16" font-weight="800" fill="#fff">Lead Chat</text>
+<path d="M786 187l10 10m0-10-10 10" stroke="#fff" stroke-width="2.5"/>
+<rect x="523" y="232" width="260" height="48" rx="13" fill="#eff3f2"/>
+<text x="538" y="252" font-family="sans-serif" font-size="13" fill="#31544a">この製品について</text>
+<text x="538" y="269" font-family="sans-serif" font-size="13" fill="#31544a">詳しく教えてください。</text>
+<rect x="539" y="293" width="259" height="72" rx="12" fill="#fff" stroke="#dbe9e2"/>
+<text x="553" y="316" font-family="sans-serif" font-size="13" fill="#31554a">製品情報をもとに、AIが</text>
+<text x="553" y="336" font-family="sans-serif" font-size="13" fill="#31554a">24時間ご案内します。</text>
+<text x="553" y="353" font-family="sans-serif" font-size="12" font-weight="700" fill="#087e59">詳しい情報を見る →</text>
+<rect x="522" y="390" width="275" height="35" rx="17" fill="#f8fbfa" stroke="#d5e5dc"/>
+<text x="535" y="412" font-family="sans-serif" font-size="12" fill="#8aa098">質問を入力してください…</text>
+<circle cx="781" cy="407" r="13" fill="#078461"/><path d="M777 401l8 6-8 6" fill="none" stroke="#fff" stroke-width="2.3"/>
+</g>
+<!-- secondary value badge, no fictional stats -->
+<g filter="url(#cardShadow)">
+<rect x="573" y="84" width="209" height="58" rx="17" fill="#fff"/>
+<circle cx="604" cy="113" r="19" fill="#e2f6ec"/>
+<circle cx="604" cy="113" r="12" stroke="#078a63" stroke-width="3" fill="none"/><path d="M604 105v9l7 3" stroke="#078a63" stroke-width="3" stroke-linecap="round"/>
+<text x="633" y="109" font-family="sans-serif" font-size="15" font-weight="900" fill="#0a4338">24時間</text>
+<text x="633" y="127" font-family="sans-serif" font-size="13" font-weight="700" fill="#4c6b61">自動で一次対応</text>
+</g>
+<g filter="url(#cardShadow)">
+<rect x="93" y="388" width="210" height="60" rx="17" fill="#fff"/>
+<circle cx="126" cy="418" r="19" fill="#e5f5ee"/>
+<rect x="116" y="414" width="6" height="13" rx="2" fill="#149e70"/><rect x="125" y="407" width="6" height="20" rx="2" fill="#149e70"/><rect x="134" y="399" width="6" height="28" rx="2" fill="#149e70"/>
+<text x="156" y="413" font-family="sans-serif" font-size="15" font-weight="900" fill="#0a4338">質問ログを蓄積</text>
+<text x="156" y="432" font-family="sans-serif" font-size="12" font-weight="700" fill="#4c6b61">サイト改善へ活用</text>
+</g>
+</svg>
