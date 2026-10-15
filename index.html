@@ -145,11 +145,51 @@ nav{font-size:16px}
  .head-actions .btn{font-size:13px}
  .note{font-size:15px}
 }
+
+/* Hero: keep both copy lines intact and render a recognizable laptop keyboard */
+@media(min-width:901px){
+.hero-grid{grid-template-columns:minmax(0,1.18fr) minmax(0,.82fr);gap:12px;min-height:610px}
+.hero h1{font-size:clamp(39px,3.75vw,55px);letter-spacing:-.065em;line-height:1.3}
+.hero-line{display:block;white-space:nowrap}
+.hero .ai{font-size:1.18em;vertical-align:-.02em;line-height:1}
+.hero-art{height:515px}
+.laptop{width:100%;transform:perspective(1100px) rotateY(-6deg)}
+.laptop-screen{height:285px}
+.site-main{padding:48px 24px}
+.chat-window{top:40px;right:-6%;width:50%;z-index:3}
+}
+.keyboard-deck{position:relative;margin:-1px -9% 0;width:118%;height:137px;padding:12px 22px 8px;background:linear-gradient(155deg,#dce2e1 0%,#adb8b7 58%,#778784 100%);border:1px solid #869390;border-radius:4px 4px 19px 19px;transform:perspective(440px) rotateX(44deg);transform-origin:top center;box-shadow:inset 0 3px 5px #ffffffae,inset 0 -6px 12px #52615e40}
+.keybed{width:100%;display:grid;gap:5px}
+.key-row{display:flex;justify-content:center;gap:4px;height:18px}
+.key-row i{display:block;flex:1;min-width:0;border-radius:3px;background:linear-gradient(145deg,#364642,#192724);box-shadow:inset 0 1px 1px #94a49c50,0 1px 1px #72817d}
+.key-row.bottom-keys i.space-key{flex:5}
+.trackpad{width:29%;height:22px;border-radius:5px;border:1px solid #8c9894;background:#c2cdca;margin:7px auto 0;box-shadow:inset 0 2px 3px #82938b4b}
+.laptop-base{height:12px;margin:-31px -12% 0;position:relative;z-index:2;background:linear-gradient(180deg,#cad4d1,#7c8b87);border-radius:0 0 50% 50%;box-shadow:0 4px 4px #3c55514a}
+@media(min-width:901px) and (max-width:1150px){
+.hero h1{font-size:clamp(35px,3.8vw,44px)}
+.hero-grid{grid-template-columns:minmax(0,1.16fr) minmax(0,.84fr)}
+}
+@media(max-width:900px){
+.hero-line{display:block;white-space:normal}
+.hero-art{height:485px}
+.laptop-screen{height:300px}
+.chat-window{top:44px;z-index:3}
+}
+@media(max-width:530px){
+.hero-art{height:350px}
+.laptop-screen{height:210px}
+.keyboard-deck{height:96px;padding:7px 12px 5px}
+.keybed{gap:3px}.key-row{height:12px;gap:3px}
+.trackpad{height:13px;margin-top:5px}
+.laptop-base{margin-top:-23px;height:9px}
+.chat-window{top:32px}
+.hero h1{font-size:clamp(34px,8.4vw,43px);line-height:1.22}
+}
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
 <main id="top">
-<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><h1>その問い合わせ、<br><span class="ai">AI</span>に任せませんか？</h1><p>24時間の自動接客で、<br>Webサイトをもっと成果の出る営業ツールへ。</p><div class="hero-actions"><a class="btn btn-orange" href="#contact" data-purpose="trial">30日間 無料トライアルを申し込む →</a><a class="btn btn-outline" href="#contact" data-purpose="materials">↓　資料をダウンロードする</a></div></div>
-<div class="hero-art" aria-label="ノートPCの画面上でLead Chatが顧客の質問に回答するイメージ" role="img"><div class="laptop"><div class="laptop-screen"><div class="site-top"><strong>● Lead Chat</strong><div class="site-links"><span>製品</span><span>導入事例</span><span>料金</span><span>お問い合わせ</span></div></div><div class="site-main"><h3>ビジネスの未来を、<br>ともに創る。</h3><p>AIとWebで、次の可能性を。</p><span class="site-pill">お問い合わせはこちら</span></div></div><div class="laptop-base"></div><div class="chat-window"><div class="chat-head"><span>● Lead Chat</span><span>×</span></div><div class="chat-content"><div class="chat-text">この製品の導入期間はどのくらいですか？</div><div class="chat-text answer">通常はお申込みから1〜2週間で導入いただけます。詳しくはお問い合わせください。</div><div class="chat-text">導入までの流れを見る　→</div></div><div class="chat-input">質問を入力してください… <b>➤</b></div></div></div></div></div></section>
+<section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><h1><span class="hero-line">その問い合わせ、</span><span class="hero-line"><span class="ai">AI</span>に任せませんか？</span></h1><p>24時間の自動接客で、<br>Webサイトをもっと成果の出る営業ツールへ。</p><div class="hero-actions"><a class="btn btn-orange" href="#contact" data-purpose="trial">30日間 無料トライアルを申し込む →</a><a class="btn btn-outline" href="#contact" data-purpose="materials">↓　資料をダウンロードする</a></div></div>
+<div class="hero-art" aria-label="ノートPCの画面上でLead Chatが顧客の質問に回答するイメージ" role="img"><div class="laptop"><div class="laptop-screen"><div class="site-top"><strong>● Lead Chat</strong><div class="site-links"><span>製品</span><span>導入事例</span><span>料金</span><span>お問い合わせ</span></div></div><div class="site-main"><h3>ビジネスの未来を、<br>ともに創る。</h3><p>AIとWebで、次の可能性を。</p><span class="site-pill">お問い合わせはこちら</span></div></div><div class="keyboard-deck"><div class="keybed" aria-hidden="true"><div class="key-row"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="key-row"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="key-row"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="key-row bottom-keys"><i></i><i></i><i></i><i class="space-key"></i><i></i><i></i><i></i></div></div><div class="trackpad"></div></div><div class="laptop-base"></div><div class="chat-window"><div class="chat-head"><span>● Lead Chat</span><span>×</span></div><div class="chat-content"><div class="chat-text">この製品の導入期間はどのくらいですか？</div><div class="chat-text answer">通常はお申込みから1〜2週間で導入いただけます。詳しくはお問い合わせください。</div><div class="chat-text">導入までの流れを見る　→</div></div><div class="chat-input">質問を入力してください… <b>➤</b></div></div></div></div></div></section>
 <section class="problems"><div class="wrap"><div class="heading"><span class="eyebrow">PROBLEM</span><h2>こんな<span class="giant">お</span>悩みありませんか？</h2></div><div class="problem-grid"><div class="problem-card"><div class="problem-icon">◷</div><div><h3>営業時間外の<br>問い合わせを逃している</h3><p>夜間や休日の問い合わせに対応できず、機会を逃してしまう。</p></div></div><div class="problem-card"><div class="problem-icon">?</div><div><h3>Webサイトのどこに<br>疑問や不満があるかわからない</h3><p>アクセス解析だけでは、訪問者の本当のニーズが見えない。</p></div></div><div class="problem-card"><div class="problem-icon">▥</div><div><h3>改善すべきページや<br>情報を判断できない</h3><p>何を優先して改善すべきかわからず、手が止まってしまう。</p></div></div></div></div></section>
 <section class="features" id="features"><div class="wrap"><div class="heading"><span class="eyebrow">SOLUTION</span><h2><span class="giant">L</span>ead Chatでできること</h2></div><div class="feature-grid"><article class="feature-card"><div class="feature-row"><span class="feature-number">01</span><div><h3>AIによる<br>24時間自動接客</h3><p>訪問者の質問にAIが自動で回答し、担当者の対応負担を軽減します。</p></div></div><div class="mini-shot"><div class="line"></div><div class="line"></div><div class="bubble">サービスの特徴を教えてください。</div><div class="bubble reply">サイトの情報をもとにご案内します。</div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">02</span><div><h3>質問ログの可視化</h3><p>質問の傾向を見える化し、顧客ニーズや改善課題を把握できます。</p></div></div><div class="mini-shot"><div class="mini-chart"><span style="height:45%"></span><span style="height:65%"></span><span style="height:35%"></span><span style="height:83%"></span><span style="height:56%"></span><span style="height:95%"></span><span style="height:75%"></span></div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">03</span><div><h3>Webサイトの改善に活用</h3><p>回答できなかった質問をもとに、必要な情報の追加を検討できます。</p></div></div><div class="mini-shot"><div class="line"></div><div class="bubble">保証期間は何年ですか？</div><div class="bubble reply">サイト内に情報が不足 → 製品詳細に追記</div></div></article></div></div></section>
 <section class="screens" id="screens"><div class="wrap"><div class="heading"><span class="eyebrow">FEATURE</span><h2><span class="giant">実</span>際の管理画面</h2><p>質問の傾向や回答状況をひと目で把握。サイト改善のヒントが見つかります。</p></div><div class="screen-grid">
