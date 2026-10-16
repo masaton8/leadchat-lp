@@ -275,16 +275,48 @@ nav{font-size:16px}
 .hero-image-trial{top:76.1%}
 .hero-image-materials{top:85.5%}
 }
+
+/* Reference-matched hero, using cropped artwork rather than a full-page pasted image */
+.hero-ref-built{background:linear-gradient(90deg,#fff 0%,#fff 48%,#f0f5f2 100%);overflow:hidden}
+.hero-ref-grid{display:grid;grid-template-columns:minmax(0,1.11fr) minmax(0,.89fr);align-items:center;gap:10px;min-height:650px}
+.hero-ref-copy{position:relative;z-index:2;padding:48px 0}
+.hero-ref-copy h1{margin:0 0 21px;letter-spacing:-.067em;font-size:clamp(39px,3.8vw,59px);line-height:1.29;font-weight:950;color:#0d2d35}
+.hero-ref-line{display:block;white-space:nowrap}
+.hero-ref-copy .ai{color:#07855e;font-size:1.22em;line-height:.9;vertical-align:-.03em}
+.hero-ref-lead{margin:0 0 24px;font-size:clamp(21px,1.9vw,27px);line-height:1.65;font-weight:800;color:#183942}
+.hero-ref-benefits{display:flex;justify-content:flex-start;gap:26px;margin:22px 0 30px}
+.hero-ref-benefit{flex:0 1 150px;text-align:center}
+.ref-icon{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;background:#e3f7ed;color:#069365;font-size:37px;font-weight:900;line-height:1}
+.hero-ref-benefit strong{display:block;font-size:16px;line-height:1.5;color:#11353b;font-weight:900}
+.hero-ref-actions{display:flex;flex-direction:column;align-items:flex-start;gap:13px}
+.hero-ref-actions .btn{min-width:400px;max-width:100%;font-size:17px;min-height:59px}
+.hero-ref-visual{position:relative;align-self:stretch;display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-ref-visual img{display:block;width:122%;max-width:none;height:auto;aspect-ratio:989 / 745;object-fit:cover;object-position:center;filter:drop-shadow(0 12px 18px #163f3020)}
+@media(min-width:901px) and (max-width:1150px){.hero-ref-copy h1{font-size:clamp(36px,3.7vw,45px)}.hero-ref-benefits{gap:13px}.hero-ref-grid{grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr)}.hero-ref-actions .btn{min-width:340px}}
+@media(max-width:900px){.hero-ref-grid{grid-template-columns:1fr;min-height:0}.hero-ref-copy{padding:36px 0 0}.hero-ref-copy h1{font-size:clamp(36px,6.7vw,59px)}.hero-ref-visual{padding:5px 0 35px}.hero-ref-visual img{width:100%;max-width:690px}.hero-ref-benefits{justify-content:space-between}}
+@media(max-width:540px){.hero-ref-built{background:linear-gradient(180deg,#fff 0%,#fff 64%,#f1f6f3 100%)}.hero-ref-copy h1{font-size:clamp(32px,8.25vw,46px);line-height:1.25}.hero-ref-lead{font-size:19px}.hero-ref-benefits{gap:6px}.hero-ref-benefit{flex:1}.ref-icon{width:47px;height:47px;font-size:29px}.hero-ref-benefit strong{font-size:12px}.hero-ref-actions .btn{width:100%;min-width:0;font-size:15px}.hero-ref-visual{padding:15px 0 30px}.hero-ref-visual img{width:110%;max-width:none}}
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
 <main id="top">
-<!-- BUILD: hero-inline-20261016 --><section class="hero hero-reference" id="hero">
-<div class="hero-reference-frame">
-<img class="hero-reference-image" src="images/leadchat-hero-reference.png" alt="Lead Chat。『その問い合わせ、AIに任せませんか？』24時間の自動接客でWebサイトをもっと成果の出る営業ツールへ。ノートPCに表示された管理画面とAIチャット画面。" width="1774" height="887" fetchpriority="high" decoding="async">
-<a class="hero-image-action hero-image-trial" href="#contact" data-purpose="trial" aria-label="30日間無料トライアルを申し込む"></a>
-<a class="hero-image-action hero-image-materials" href="#contact" data-purpose="materials" aria-label="資料をダウンロードする"></a>
+<!-- BUILD: hero-inline-20261016 --><section class="hero hero-ref-built" id="hero">
+<div class="wrap hero-ref-grid">
+<div class="hero-ref-copy">
+<h1><span class="hero-ref-line">その問い合わせ、</span><span class="hero-ref-line"><span class="ai">AI</span>に任せませんか？</span></h1>
+<p class="hero-ref-lead">24時間の自動接客で、<br>Webサイトをもっと成果の出る営業ツールへ。</p>
+<div class="hero-ref-benefits" aria-label="Lead Chatの特長">
+<div class="hero-ref-benefit"><span class="ref-icon" aria-hidden="true">◷</span><strong>24時間<br>自動対応</strong></div>
+<div class="hero-ref-benefit"><span class="ref-icon" aria-hidden="true">◎</span><strong>問い合わせ対応の<br>工数を削減</strong></div>
+<div class="hero-ref-benefit"><span class="ref-icon" aria-hidden="true">▥</span><strong>見込み客の<br>取りこぼしを防ぐ</strong></div>
 </div>
-</section>
+<div class="hero-ref-actions">
+<a class="btn btn-orange" href="#contact" data-purpose="trial">30日間 無料トライアルを申し込む →</a>
+<a class="btn btn-outline" href="#contact" data-purpose="materials">↓　資料をダウンロードする</a>
+</div>
+</div>
+<div class="hero-ref-visual">
+<img src="images/leadchat-hero-crop.webp" width="290" height="218" alt="ノートPCに表示されたLead Chat管理画面と、訪問者の質問に答えるAIチャット。24時間の自動接客と質問ログの活用を表現" fetchpriority="high" decoding="async">
+</div>
+</div></section>
 <section class="problems"><div class="wrap"><div class="heading"><span class="eyebrow">PROBLEM</span><h2>こんな<span class="giant">お</span>悩みありませんか？</h2></div><div class="problem-grid"><div class="problem-card"><div class="problem-icon">◷</div><div><h3>営業時間外の<br>問い合わせを逃している</h3><p>夜間や休日の問い合わせに対応できず、機会を逃してしまう。</p></div></div><div class="problem-card"><div class="problem-icon">?</div><div><h3>Webサイトのどこに<br>疑問や不満があるかわからない</h3><p>アクセス解析だけでは、訪問者の本当のニーズが見えない。</p></div></div><div class="problem-card"><div class="problem-icon">▥</div><div><h3>改善すべきページや<br>情報を判断できない</h3><p>何を優先して改善すべきかわからず、手が止まってしまう。</p></div></div></div></div></section>
 <section class="features" id="features"><div class="wrap"><div class="heading"><span class="eyebrow">SOLUTION</span><h2><span class="giant">L</span>ead Chatでできること</h2></div><div class="feature-grid"><article class="feature-card"><div class="feature-row"><span class="feature-number">01</span><div><h3>AIによる<br>24時間自動接客</h3><p>訪問者の質問にAIが自動で回答し、担当者の対応負担を軽減します。</p></div></div><div class="mini-shot"><div class="line"></div><div class="line"></div><div class="bubble">サービスの特徴を教えてください。</div><div class="bubble reply">サイトの情報をもとにご案内します。</div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">02</span><div><h3>質問ログの可視化</h3><p>質問の傾向を見える化し、顧客ニーズや改善課題を把握できます。</p></div></div><div class="mini-shot"><div class="mini-chart"><span style="height:45%"></span><span style="height:65%"></span><span style="height:35%"></span><span style="height:83%"></span><span style="height:56%"></span><span style="height:95%"></span><span style="height:75%"></span></div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">03</span><div><h3>Webサイトの改善に活用</h3><p>回答できなかった質問をもとに、必要な情報の追加を検討できます。</p></div></div><div class="mini-shot"><div class="line"></div><div class="bubble">保証期間は何年ですか？</div><div class="bubble reply">サイト内に情報が不足 → 製品詳細に追記</div></div></article></div></div></section>
 <section class="screens" id="screens"><div class="wrap"><div class="heading"><span class="eyebrow">FEATURE</span><h2><span class="giant">実</span>際の管理画面</h2><p>質問の傾向や回答状況をひと目で把握。サイト改善のヒントが見つかります。</p></div><div class="screen-grid">
