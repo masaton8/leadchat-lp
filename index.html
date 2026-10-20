@@ -751,41 +751,95 @@ header{display:block !important;position:sticky;top:0;z-index:100;background:#ff
 .scene-caption{font-size:9px;top:3%}.scene-bottom-label{font-size:9px;bottom:2%}
 }
 @media(prefers-reduced-motion:no-preference){.conversation-card{animation:bubble-rise .8s ease-out both}.floating-insight{animation:bubble-rise 1s ease-out both}@keyframes bubble-rise{from{opacity:0;translate:0 20px}to{opacity:1;translate:0 0}}}
+
+/* Photo-based reference implementation: only the notebook is raster artwork. */
+.hero-approved{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(105deg,#fff 0%,#fff 41%,#e6f4ed 100%);padding:0}
+.hero-approved-atmosphere{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 42% 65% at 83% 39%,#bdedcf88,transparent 77%),radial-gradient(ellipse 65% 60% at 97% 115%,#f7e4d7a3,transparent 78%)}
+.hero-approved-content{width:min(1660px,calc(100% - 84px));margin:0 auto;display:grid;grid-template-columns:minmax(0,45%) minmax(0,55%);min-height:730px;align-items:center}
+.hero-approved-copy{position:relative;z-index:5;padding:35px 0 45px;min-width:0}
+.hero-approved .hero-impact-kicker{font-size:clamp(15px,1.15vw,19px);margin-bottom:28px;color:#078b64}
+.hero-approved h1{font-size:clamp(46px,4.4vw,77px);line-height:1.11;letter-spacing:-.075em;color:#092d38;margin:0 0 26px;font-weight:950}
+.hero-approved h1 .impact-line{display:block;white-space:nowrap}
+.hero-approved h1 em{color:#049965;font-style:normal;font-size:1.2em;vertical-align:-.04em}
+.hero-approved .hero-impact-lead{font-size:clamp(21px,1.65vw,29px);line-height:1.52;color:#173945;margin-bottom:25px;font-weight:800}
+.hero-approved-benefits{width:min(100%,565px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 26px}
+.hero-approved-benefits>div{display:flex;flex-direction:column;gap:7px;align-items:center;text-align:center}
+.approved-benefit-icon{display:grid;place-items:center;background:#e3f6eb;color:#079466;width:66px;height:66px;border-radius:50%;font-size:31px;font-weight:900}
+.hero-approved-benefits strong{color:#0b2e38;font-size:clamp(12px,1.05vw,17px);font-weight:900;line-height:1.4}
+.hero-approved .hero-impact-actions{width:min(100%,515px);gap:12px}
+.hero-approved .hero-impact-actions a{width:100%;min-height:65px;max-width:none;font-size:clamp(15px,1.15vw,19px)}
+.hero-approved-visual{height:690px;min-width:0;position:relative;display:flex;align-items:flex-end;justify-content:center;isolation:isolate}
+.hero-approved-light{position:absolute;z-index:-1;inset:12% -16% 0 0;border-radius:50%;background:radial-gradient(ellipse,#d4f0ddaa,transparent 72%)}
+.hero-approved-pc{display:block;position:relative;width:123%;max-width:none;flex:0 0 123%;margin-left:2%;margin-bottom:-2%;filter:drop-shadow(0 21px 25px #173d312d)}
+.hero-approved-pc img{width:100%;height:auto;max-width:none;display:block;object-fit:contain}
+.hero-approved-bubble{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;padding:12px 17px;background:white;color:#11363e;border-radius:16px;box-shadow:0 12px 34px #195c432e;border:1px solid #d7eade;font-size:15px;line-height:1.4}
+.bubble-symbol{width:39px;height:39px;flex:0 0 39px;display:grid;place-items:center;background:#e6f7ed;color:#078a60;border-radius:50%;font-size:23px}
+.approved-bubble-top{top:10%;right:20%}
+.approved-bubble-right{top:29%;right:-1%}
+.approved-bubble-bottom{bottom:17%;right:-2%}
+@media(max-width:1300px){
+.hero-approved-content{width:calc(100% - 65px);grid-template-columns:47% 53%;min-height:620px}
+.hero-approved-visual{height:585px}
+.hero-approved-pc{width:116%;flex-basis:116%}
+.hero-approved h1{font-size:clamp(40px,4.2vw,60px)}
+.hero-approved-bubble{font-size:12px;padding:9px 12px}
+}
+@media(max-width:900px){
+.hero-approved{background:linear-gradient(180deg,#fff 0%,#f0faf4 100%)}
+.hero-approved-content{width:calc(100% - 40px);grid-template-columns:1fr;min-height:0}
+.hero-approved-copy{padding:38px 0 5px}
+.hero-approved h1{font-size:clamp(37px,7.4vw,62px)}
+.hero-approved-visual{height:auto;min-height:340px;align-items:center;margin-top:15px;padding:20px}
+.hero-approved-pc{width:105%;flex:0 0 105%;margin:0}
+.approved-bubble-top{top:0;right:13%}
+.approved-bubble-right{top:28%;right:0}
+.approved-bubble-bottom{bottom:6%;right:3%}
+}
+@media(max-width:550px){
+.hero-approved-content{width:calc(100% - 30px)}
+.hero-approved-copy{padding:25px 0 0}
+.hero-approved h1{font-size:clamp(32px,8vw,45px)}
+.hero-approved h1 .impact-line{white-space:normal}
+.hero-approved .hero-impact-lead{font-size:18px}
+.approved-benefit-icon{width:49px;height:49px;font-size:22px}
+.hero-approved-benefits{gap:6px}
+.hero-approved-benefits strong{font-size:12px}
+.hero-approved .hero-impact-actions a{font-size:15px;min-height:55px}
+.hero-approved-visual{min-height:220px;padding:8px 0}
+.hero-approved-pc{width:110%;flex-basis:110%}
+.hero-approved-bubble{display:none}
+}
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
 <main id="top">
-<!-- BUILD: hero-inline-20261016 --><section class="hero-impact hero-final hero-no-pc" aria-labelledby="hero-impact-heading">
-<div class="hero-final-inner">
-  <div class="hero-final-copy">
-    <p class="hero-impact-kicker"><span class="hero-impact-kicker-line"></span>24時間AI接客 × 質問ログ活用</p>
-    <h1 id="hero-impact-heading"><span class="impact-line">その問い合わせ、</span><span class="impact-line"><em>AI</em>に任せませんか？</span></h1>
-    <p class="hero-impact-lead">24時間の自動接客で、<br><strong>Webサイトをもっと成果の出る営業ツールへ。</strong></p>
-    <div class="hero-final-benefits" aria-label="Lead Chatの主な特長">
-      <div><span class="benefit-mark" aria-hidden="true">◷</span><strong>24時間<br>自動接客</strong></div>
-      <div><span class="benefit-mark" aria-hidden="true">♧</span><strong>問い合わせ対応の<br>負担を軽減</strong></div>
-      <div><span class="benefit-mark" aria-hidden="true">▥</span><strong>顧客の声を<br>サイト改善へ</strong></div>
-    </div>
-    <div class="hero-impact-actions">
-      <a class="impact-button-primary" href="#contact" data-purpose="trial">30日間無料トライアルを申し込む <span aria-hidden="true">→</span></a>
-      <a class="impact-button-secondary" href="#contact" data-purpose="materials">資料をダウンロードする <span aria-hidden="true">↓</span></a>
-    </div>
+<!-- BUILD: hero-inline-20261016 --><section class="hero-impact hero-final hero-approved" aria-labelledby="hero-impact-heading">
+ <div class="hero-approved-atmosphere" aria-hidden="true"></div>
+ <div class="hero-approved-content">
+  <div class="hero-approved-copy">
+   <p class="hero-impact-kicker"><span class="hero-impact-kicker-line"></span>24時間AI接客 × 質問ログ活用</p>
+   <h1 id="hero-impact-heading"><span class="impact-line">その問い合わせ、</span><span class="impact-line"><em>AI</em>に任せませんか？</span></h1>
+   <p class="hero-impact-lead">24時間の自動接客で、<br><strong>Webサイトをもっと成果の出る営業ツールへ。</strong></p>
+   <div class="hero-approved-benefits" aria-label="Lead Chatの3つの特長">
+    <div><span class="approved-benefit-icon">◷</span><strong>24時間<br>自動対応</strong></div>
+    <div><span class="approved-benefit-icon">♧</span><strong>問い合わせ対応の<br>負担を軽減</strong></div>
+    <div><span class="approved-benefit-icon">▥</span><strong>見込み客の<br>取りこぼしを防ぐ</strong></div>
+   </div>
+   <div class="hero-impact-actions">
+    <a class="impact-button-primary" href="#contact" data-purpose="trial">30日間無料トライアルを申し込む <span aria-hidden="true">→</span></a>
+    <a class="impact-button-secondary" href="#contact" data-purpose="materials">資料をダウンロードする <span aria-hidden="true">↓</span></a>
+   </div>
   </div>
-  <div class="hero-bubbles-scene" aria-label="質問を受けたAIが回答し、会話内容がサイト改善にも活用されるイメージ">
-    <div class="hero-scene-glow" aria-hidden="true"></div>
-    <div class="scene-caption">AI CUSTOMER EXPERIENCE <span>／ 24H SUPPORT</span></div>
-    <div class="conversation-card">
-      <div class="conversation-brand"><span class="brand-orb">●</span><strong>Lead Chat</strong><span class="brand-online">● 24時間対応</span></div>
-      <div class="conversation-flow">
-        <div class="message message-visitor"><span class="message-type">VISITOR</span><p>営業時間外でも<br>問い合わせできますか？</p></div>
-        <div class="message message-assistant"><span class="message-type">LEAD CHAT AI</span><p>はい。24時間いつでも、<br>ご質問にお答えします。</p><span class="message-action">サービスの詳細を見る　↗</span></div>
-      </div>
-      <div class="conversation-input">ここに質問を入力 <span>➤</span></div>
-    </div>
-    <div class="floating-insight floating-insight-one"><span class="insight-pictogram">◷</span><span><strong>24時間いつでも対応</strong><small>営業時間外の疑問も解決へ</small></span></div>
-    <div class="floating-insight floating-insight-two"><span class="insight-pictogram">↗</span><span><strong>質問を改善のヒントに</strong><small>顧客ニーズを見える化</small></span></div>
-    <div class="scene-bottom-label"><span></span> Answer. Learn. Improve.</div>
+  <div class="hero-approved-visual" aria-label="Lead Chatの管理画面が表示されたノートPCとサービス特長">
+   <div class="hero-approved-light" aria-hidden="true"></div>
+   <picture class="hero-approved-pc">
+    <source srcset="images/leadchat-pc-approved.webp" type="image/webp">
+    <img src="images/hero-laptop-isolated.webp" width="900" height="620" alt="Lead Chatの管理画面を表示したノートPC" fetchpriority="high" decoding="async">
+   </picture>
+   <div class="hero-approved-bubble approved-bubble-top"><span class="bubble-symbol">◷</span><strong>24時間<br>いつでも対応</strong></div>
+   <div class="hero-approved-bubble approved-bubble-right"><span class="bubble-symbol">♧</span><strong>見込み客を<br>逃さない</strong></div>
+   <div class="hero-approved-bubble approved-bubble-bottom"><span class="bubble-symbol">▥</span><strong>問い合わせ対応の<br>負担を軽減</strong></div>
   </div>
-</div>
+ </div>
 </section>
 <section class="problems"><div class="wrap"><div class="heading"><span class="eyebrow">PROBLEM</span><h2>こんな<span class="giant">お</span>悩みありませんか？</h2></div><div class="problem-grid"><div class="problem-card"><div class="problem-icon">◷</div><div><h3>営業時間外の<br>問い合わせを逃している</h3><p>夜間や休日の問い合わせに対応できず、機会を逃してしまう。</p></div></div><div class="problem-card"><div class="problem-icon">?</div><div><h3>Webサイトのどこに<br>疑問や不満があるかわからない</h3><p>アクセス解析だけでは、訪問者の本当のニーズが見えない。</p></div></div><div class="problem-card"><div class="problem-icon">▥</div><div><h3>改善すべきページや<br>情報を判断できない</h3><p>何を優先して改善すべきかわからず、手が止まってしまう。</p></div></div></div></div></section>
 <section class="features" id="features"><div class="wrap"><div class="heading"><span class="eyebrow">SOLUTION</span><h2><span class="giant">L</span>ead Chatでできること</h2></div><div class="feature-grid"><article class="feature-card"><div class="feature-row"><span class="feature-number">01</span><div><h3>AIによる<br>24時間自動接客</h3><p>訪問者の質問にAIが自動で回答し、担当者の対応負担を軽減します。</p></div></div><div class="mini-shot"><div class="line"></div><div class="line"></div><div class="bubble">サービスの特徴を教えてください。</div><div class="bubble reply">サイトの情報をもとにご案内します。</div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">02</span><div><h3>質問ログの可視化</h3><p>質問の傾向を見える化し、顧客ニーズや改善課題を把握できます。</p></div></div><div class="mini-shot"><div class="mini-chart"><span style="height:45%"></span><span style="height:65%"></span><span style="height:35%"></span><span style="height:83%"></span><span style="height:56%"></span><span style="height:95%"></span><span style="height:75%"></span></div></div></article><article class="feature-card"><div class="feature-row"><span class="feature-number">03</span><div><h3>Webサイトの改善に活用</h3><p>回答できなかった質問をもとに、必要な情報の追加を検討できます。</p></div></div><div class="mini-shot"><div class="line"></div><div class="bubble">保証期間は何年ですか？</div><div class="bubble reply">サイト内に情報が不足 → 製品詳細に追記</div></div></article></div></div></section>
