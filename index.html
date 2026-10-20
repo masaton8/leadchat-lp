@@ -527,36 +527,70 @@ header{display:block !important;position:sticky;top:0;z-index:100;background:#ff
 }
 @media(prefers-reduced-motion:no-preference){.hero-impact-copy{animation:impact-rise .55s ease-out both}.hero-impact-right{animation:impact-appear .7s ease-out both}@keyframes impact-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@keyframes impact-appear{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}}
 
-/* Hero photograph composition fix: ONE laptop only, no duplicate overlays */
-.hero-impact-stage{background:linear-gradient(115deg,#ffffff 0%,#f9fcfa 44%,#e8f3ec 100%);overflow:hidden}
+/* Balanced hero visual — natural-size laptop, generous breathing room */
+.hero-impact{overflow:hidden}
+.hero-impact-stage{
+ background:linear-gradient(110deg,#fff 0%,#f8fbf9 53%,#eaf5ef 100%);
+ overflow:hidden;
+}
 .hero-impact-photo{display:none!important}
-.hero-impact-wash{position:absolute;inset:0;background:radial-gradient(ellipse 55% 80% at 82% 53%,rgba(132,195,161,.25),transparent 75%);pointer-events:none}
-.hero-impact-content{grid-template-columns:48% 52%;min-height:660px}
-.hero-impact-copy{z-index:5}
-.hero-impact-right{height:630px;display:flex;align-items:center;justify-content:center;overflow:visible}
-.hero-impact-device{width:130%;flex:0 0 130%;max-width:none;transform:translate(2%,4%);filter:drop-shadow(0 28px 26px rgba(26,75,58,.22))}
-.hero-impact-device img{width:100%;height:auto;display:block;object-fit:contain}
+.hero-impact-wash{
+ position:absolute;inset:0;pointer-events:none;
+ background:radial-gradient(ellipse 40% 62% at 80% 47%,rgba(106,181,140,.14),transparent 78%);
+}
+.hero-impact-content{
+ width:min(1440px,calc(100% - 88px));
+ grid-template-columns:minmax(0,48%) minmax(0,52%);
+ gap:0;min-height:660px;align-items:center;
+}
+.hero-impact-copy{min-width:0;position:relative;z-index:5;padding:42px 0}
+.hero-impact h1{font-size:clamp(43px,4.6vw,70px);line-height:1.16}
+.hero-impact-right{
+ height:580px;width:100%;min-width:0;
+ position:relative;display:flex;justify-content:center;align-items:center;
+ overflow:visible;
+}
+.hero-impact-device{
+ position:relative;width:100%;max-width:730px;flex:0 1 730px;
+ transform:translate(0,10px);
+ filter:drop-shadow(0 22px 22px rgba(12,60,42,.16));
+ z-index:1;
+}
+.hero-impact-device img{
+ display:block;width:100%;height:auto;max-width:100%;object-fit:contain;
+}
 .hero-impact-chat{display:none!important}
-.hero-impact-callout{box-shadow:0 12px 35px rgba(9,79,50,.16);border:1px solid rgba(10,127,84,.08)}
-.impact-callout-a{right:5%;top:8%}
-.impact-callout-b{right:0;bottom:8%}
-@media(max-width:1280px){
-.hero-impact-content{grid-template-columns:49% 51%}
-.hero-impact-right{height:530px}
-.hero-impact-device{width:129%;flex-basis:129%;transform:translate(2%,3%)}
+.hero-impact-callout{
+ position:absolute;display:flex;align-items:center;gap:10px;
+ padding:12px 15px;border-radius:15px;background:#fff;
+ box-shadow:0 12px 30px rgba(10,70,50,.13);
+ border:1px solid rgba(11,117,80,.12);
+ z-index:3;font-size:14px;line-height:1.4;
+}
+.impact-callout-a{top:9%;right:12%}
+.impact-callout-b{bottom:10%;right:5%}
+@media(min-width:901px) and (max-width:1200px){
+ .hero-impact-content{width:calc(100% - 60px);grid-template-columns:49% 51%;min-height:580px}
+ .hero-impact-right{height:505px}
+ .hero-impact-device{max-width:600px;transform:translateY(10px)}
+ .hero-impact h1{font-size:clamp(38px,4.15vw,52px)}
+ .impact-callout-a{top:8%;right:7%}
+ .impact-callout-b{bottom:8%;right:4%}
 }
 @media(max-width:900px){
-.hero-impact-stage{background:linear-gradient(180deg,#fff 0%,#f2faf5 100%)}
-.hero-impact-content{grid-template-columns:1fr}
-.hero-impact-right{height:auto;min-height:380px;max-width:750px;width:100%;margin:15px auto 0}
-.hero-impact-device{width:110%;flex:0 0 110%;transform:none}
-.impact-callout-a{right:5%;top:1%}
-.impact-callout-b{right:3%;bottom:1%}
+ .hero-impact-stage{background:linear-gradient(180deg,#fff 0%,#f2faf5 100%)}
+ .hero-impact-content{width:calc(100% - 38px);grid-template-columns:1fr;min-height:0;padding:25px 0 42px}
+ .hero-impact-copy{padding:10px 0 0}
+ .hero-impact-right{width:100%;height:auto;min-height:0;max-width:700px;margin:22px auto 0;padding:30px 16px}
+ .hero-impact-device{flex:0 1 auto;width:100%;max-width:650px;transform:none}
+ .impact-callout-a{top:2%;right:5%}
+ .impact-callout-b{bottom:1%;right:4%}
 }
 @media(max-width:560px){
-.hero-impact-right{min-height:240px}
-.hero-impact-device{width:112%;flex-basis:112%}
-.hero-impact-callout{display:none}
+ .hero-impact-content{width:calc(100% - 28px);padding:20px 0 25px}
+ .hero-impact-right{margin-top:12px;padding:12px 0}
+ .hero-impact-device{width:100%;max-width:none}
+ .hero-impact-callout{display:none}
 }
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
