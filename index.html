@@ -412,6 +412,34 @@ header{display:none}
   .hero-shell{gap:12px}.hero-refined .hero-lead{font-size:20px}.hero-benefits{grid-template-columns:1fr 1fr 1fr;gap:8px}.benefit-icon{width:46px;height:46px;font-size:18px}.hero-benefit strong,.hero-benefit span{font-size:12px;line-height:1.35}.hero-actions .btn{font-size:18px;min-height:54px}.hero-actions .btn.outline{font-size:16px}
 }
 
+
+/* Final hero sizing: keep Japanese headline and CTA inside the left column */
+@media(min-width:981px){
+.hero-shell{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:22px;min-height:570px}
+.hero-copy-ref{min-width:0}
+.hero-brand{margin-bottom:22px}
+.hero-brand-mark{flex-basis:46px;width:46px;height:46px;border-radius:14px}
+.hero-brand-text strong{font-size:32px}
+.hero-brand-text small{font-size:14px;margin-top:3px}
+.hero-refined h1{font-size:clamp(40px,3.6vw,58px);line-height:1.13;letter-spacing:-.065em;margin-bottom:20px}
+.hero-refined .hero-lead{font-size:clamp(19px,1.6vw,25px);line-height:1.7}
+.hero-actions .btn,.hero-actions .btn.outline{width:min(100%,420px);min-width:0;min-height:58px;font-size:17px}
+.hero-benefits{max-width:460px;gap:8px}
+.benefit-icon{width:52px;height:52px;font-size:22px;margin-bottom:6px}
+.hero-benefit strong,.hero-benefit span{font-size:14px}
+.hero-visual-ref{align-self:center}
+.hero-visual-ref img{width:110%;max-width:none;margin-right:-7%;border-radius:8px}
+}
+@media(min-width:981px) and (max-width:1120px){
+.hero-refined h1{font-size:clamp(36px,3.5vw,43px)}
+.hero-refined .hero-lead{font-size:19px}
+}
+@media(max-width:980px){
+.hero-refined h1{font-size:clamp(36px,7.5vw,62px)}
+.hero-actions .btn,.hero-actions .btn.outline{min-width:0;font-size:clamp(15px,3.5vw,20px)}
+.hero-brand-text strong{font-size:30px}
+.hero-brand-text small{font-size:13px}
+}
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
 <main id="top">
