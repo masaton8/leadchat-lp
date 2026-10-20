@@ -846,6 +846,39 @@ header{display:block !important;position:sticky;top:0;z-index:100;background:#ff
 @media(max-width:1250px){.hero-office-inner{grid-template-columns:50% 50%}.hero-office-v2 h1{font-size:clamp(38px,4.05vw,55px)}.hero-office-stage{height:560px}.hero-office-chat{width:46%;top:20%}.hero-office-visitor,.hero-office-answer{font-size:11px}}
 @media(max-width:900px){.hero-office-inner{width:calc(100% - 38px);grid-template-columns:1fr;min-height:0}.hero-office-copy{padding:30px 0 5px}.hero-office-stage{height:auto;min-height:420px;margin-top:20px;align-items:center}.hero-office-computer{width:92%;transform:none}.hero-office-chat{right:9%;width:36%;top:15%}.hero-office-float-a{top:2%;right:15%}.hero-office-float-b{bottom:1%}.hero-office-veil{background:linear-gradient(180deg,#fffffffa 0%,#fffffff2 45%,#ffffff9c 74%,#ffffff24 100%)}}
 @media(max-width:550px){.hero-office-inner{width:calc(100% - 28px)}.hero-office-v2 h1{font-size:clamp(32px,8.3vw,43px)}.hero-office-v2 h1 .impact-line{white-space:normal}.hero-office-v2 .hero-impact-kicker{font-size:12px}.hero-office-v2 .hero-impact-lead{font-size:18px}.hero-office-benefits{margin-bottom:19px}.hero-office-round{width:48px;height:48px;font-size:22px}.hero-office-benefits strong{font-size:11px}.hero-office-v2 .hero-impact-actions a{font-size:14px;min-height:55px}.hero-office-stage{min-height:290px}.hero-office-computer{width:104%}.hero-office-chat{width:45%;right:0;top:13%;border-radius:11px}.hero-office-chat-top{height:28px;padding:0 7px;font-size:10px}.hero-office-chat-messages{padding:7px;gap:5px}.hero-office-visitor,.hero-office-answer{font-size:9px;padding:6px}.hero-office-suggestions span{font-size:8px;padding:5px}.hero-office-chat-input{display:none}.hero-office-float{display:none}}
+
+/* Hero placement fix 2026-10-20: full chassis visible, smaller chat overlap */
+.hero-office-v2{overflow:hidden}
+.hero-office-inner{grid-template-columns:minmax(0,49%) minmax(0,51%);min-height:680px}
+.hero-office-stage{position:relative;min-width:0;height:630px;overflow:visible;display:block}
+.hero-office-computer{
+ position:absolute;display:block;width:88%;height:auto;max-width:none;
+ left:0;bottom:2%;transform:none;object-fit:contain;
+ filter:drop-shadow(0 18px 18px rgba(20,46,36,.18));
+}
+.hero-office-chat{position:absolute;top:19%;right:-1%;width:36%;max-width:265px}
+.hero-office-float-a{left:3%;right:auto;top:4%}
+.hero-office-float-b{right:0;bottom:8%}
+@media(min-width:901px) and (max-width:1250px){
+.hero-office-stage{height:560px}
+.hero-office-computer{width:88%;left:0;bottom:5%}
+.hero-office-chat{width:37%;right:0;top:21%}
+.hero-office-float-a{left:1%;top:5%}
+}
+@media(max-width:900px){
+.hero-office-inner{grid-template-columns:1fr;min-height:0}
+.hero-office-stage{height:auto;aspect-ratio:1.35;max-width:720px;width:100%;margin:18px auto 0;overflow:visible}
+.hero-office-computer{width:86%;left:2%;bottom:3%;height:auto}
+.hero-office-chat{width:35%;right:2%;top:17%}
+.hero-office-float-a{left:4%;top:3%}
+.hero-office-float-b{bottom:3%;right:3%}
+}
+@media(max-width:550px){
+.hero-office-stage{aspect-ratio:1.37;min-height:0}
+.hero-office-computer{width:91%;left:0;bottom:2%}
+.hero-office-chat{width:38%;right:0;top:19%}
+.hero-office-float-a,.hero-office-float-b{display:none}
+}
 </style></head><body>
 <header><div class="wrap header"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">•••</span>Lead Chat</a><nav><a href="#features">特長</a><a href="#cases">導入事例</a><a href="#pricing">料金</a><a href="#faq">よくある質問</a></nav><div class="head-actions"><a class="btn btn-outline" href="#contact" data-purpose="materials">資料請求</a><a class="btn btn-orange" href="#contact" data-purpose="trial">無料トライアル →</a></div></div></header>
 <main id="top">
@@ -868,7 +901,7 @@ header{display:block !important;position:sticky;top:0;z-index:100;background:#ff
   </div>
  </div>
  <div class="hero-office-stage" aria-label="Lead ChatのノートPCとチャット回答のデモイメージ">
-  <img class="hero-office-computer" src="images/leadchat-pc-approved.webp" alt="Lead Chatの管理画面を表示したノートPC" width="1536" height="1024" decoding="async" fetchpriority="high">
+  <img class="hero-office-computer" src="images/leadchat-pc-no-stickers.svg" alt="Lead Chatの管理画面を表示したノートPC" width="1536" height="1024" decoding="async" fetchpriority="high">
   <div class="hero-office-chat" aria-label="チャットでの質問とAI回答のイメージ">
    <div class="hero-office-chat-top"><span class="chat-logo-dot">●</span><strong>Lead Chat</strong><span aria-hidden="true">×</span></div>
    <div class="hero-office-chat-messages">
