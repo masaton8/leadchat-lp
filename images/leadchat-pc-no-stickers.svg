@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" aria-label="Lead Chatの管理画面を表示したノートPC">
+<defs>
+<linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2dfdb"/><stop offset=".55" stop-color="#d9d7d3"/><stop offset="1" stop-color="#d0d1cf"/></linearGradient>
+<filter id="soft"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<image href="leadchat-pc-approved.webp" width="1536" height="1024" preserveAspectRatio="xMidYMid meet"/>
+<!-- Palmrest stickers concealed with brushed-aluminum finish, above original graphics -->
+<path d="M1050 911L1193 923L1177 990L1033 979Z" fill="url(#silver)" opacity=".99" filter="url(#soft)"/>
+<path d="M1196 925L1342 938L1329 1001L1182 988Z" fill="url(#silver)" opacity=".99" filter="url(#soft)"/>
+</svg>
